@@ -4,7 +4,7 @@ class Profil extends React.Component {
   constructor(props) {
     super(props)
     this.updateProfilPrenom = this.updateProfilPrenom.bind(this)
-    this.state = {prenom: "coeur a prendre", nom:"", age:"", sexe:"", interet:""}
+    this.state = {prenom: "coeur à prendre", nom:"", age:"", sexe:"", interet:""}
     this.updateProfilNom = this.updateProfilNom.bind(this)
     this.updateProfilAge = this.updateProfilAge.bind(this)
     this.updateProfilSexe = this.updateProfilSexe.bind(this)
@@ -29,9 +29,14 @@ class Profil extends React.Component {
 
   render() {
     const inputStyle = {
-      color: "#FF33F6",
+      color: "yellow",
+      backgroundColor: "rgba(255,255,255,0)",
     }
-    
+
+    const optionStyle = {
+      backgroundColor: "black"
+    }
+
     //extraire les valeurs du state (déconstruction)
     const {nom, age, sexe, interet} = this.state
     const done = nom !== "" && age !== "" && sexe !== "" && interet !== ""
@@ -49,22 +54,28 @@ class Profil extends React.Component {
           <br />
           <input style={inputStyle} type="age" className="form-control" value={this.state.value} onChange={this.updateProfilAge} placeholder="Votre âge" />
           <br />
-          <input style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe" />
+          <select style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe">
+              <option style={optionStyle}>Homme</option>
+              <option style={optionStyle}>Femme</option>
+              <option style={optionStyle}>Droïde</option>
+          </select>
           <br />
           <label htmlFor="selectGender">Je suis intéressé(e) par...</label>
             <select className="form-control" id="selectGender" style={inputStyle} value={this.state.value} onChange={this.updateProfilInteret}>
-              <option>une femme</option>
-              <option>un homme</option>
-              <option>un droïde</option>
+              <option style={optionStyle}>une femme</option>
+              <option style={optionStyle}>un homme</option>
+              <option style={optionStyle}>un droïde</option>
             </select>
         </div>
         <div className="story col-md-6">
           <h1>Bonjour {this.state.prenom}</h1>
           <div style={storyStyle}>
             <p>Puissante la famille {this.state.nom} est, dans la force !</p>
-            <p>Mais seul, aujourd'hui tu te trouves...</p>
+            <p>Mais seul(e), aujourd'hui tu te trouves...</p>
             <p>Tu nous fait part de ton intérêt pour {this.state.interet}</p>
+            <button>Des renseignements, nous donner tu dois</button>
           </div>
+
         </div>
       </div>
     )

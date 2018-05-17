@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Profil from './Profil'
 import Header from './Header'
-import './bootstrap.min.css'
 import './App.css';
 
 class App extends Component {
