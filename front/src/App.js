@@ -3,21 +3,23 @@ import update from 'react-addons-update';
 import quizQuestions from './quiz/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
+import Profil from './Profil'
+import Header from './Header'
+
 import './App.css';
-import logo from './logo.svg';
-import './bootstrap.min.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">SoulMate</h1>
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>L'amour à 3 parsecs de chez toi</p>
-        </header>
+        <div className="row">
+          <div className="header col-md-12">
+            <Header />
+          </div>
+        </div>
+        <Profil />
+
         <p className="App-intro">  </p>
-          <Quiz />
       </div>
     );
   }
