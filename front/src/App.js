@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Profil from './Profil'
-import Header from './Header'
+import Profil from './Profil';
+import Header from './Header';
 import './App.css';
+import NiceStories from './NiceStories'
+// import Testimony from './Testimony'
 
 class App extends Component {
   render() {
@@ -13,8 +15,7 @@ class App extends Component {
           </div>
         </div>
         <Profil />
-
-        <p className="App-intro">  </p>
+        <NiceStories />
       </div>
     );
   }
