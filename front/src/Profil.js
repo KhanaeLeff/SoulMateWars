@@ -71,10 +71,10 @@ class Profil extends React.Component {
         <div className="story col-md-6">
           <h1>Bonjour {this.state.prenom}</h1>
           <div style={storyStyle}>
-            <p>Puissante la famille {this.state.nom} est, dans la force !</p>
-            <p>Mais seul(e), aujourd'hui tu te trouves...</p>
-            <p>Tu nous fait part de ton intérêt pour {this.state.interet}</p>
-            <p>Afin de t'aider</p>
+            <p className="motherFuckinParagraph">Puissante la famille {this.state.nom} est, dans la force !<br />
+            Mais seul(e), aujourd'hui tu te trouves...<br />
+            Tu nous fait part de ton intérêt pour {this.state.interet}<br />
+            Afin de t'aider</p>
             <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
           </div>
         </div>
