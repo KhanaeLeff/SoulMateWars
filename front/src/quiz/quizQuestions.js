@@ -3,19 +3,19 @@ var quizQuestions = [
       question: "Quelles sont tes vacances idéales ?",
       answers: [
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Les plages ensolleilées de Tatooine"
           },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "La visite des cités culturelles de Naboo"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Des rando-raquettes sur Hoth"
-          }
+          },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "La découverte de la forêt tropicale d'Endor"
           }
       ]
@@ -24,19 +24,19 @@ var quizQuestions = [
       question: "Quel est ton type de musique préféré ?",
       answers: [
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Le Hard-Force"
           },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "La Musette de Yavin IV"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Le Rap des Siths"
-          }
+          },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "La Transe-expérimentale-progressive des Ewoks"
           }
       ]
@@ -45,19 +45,19 @@ var quizQuestions = [
       question: "Tu es à bord d'un vaisseau de croisière de la Fédération, quand tu vois un départ de feu dans un couloir :",
       answers: [
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Tu aides à évacuer les autres passagers"
           },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Tu vas voir l'équipe de maintenance pour leur filer un coup de main"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Tu retournes au bar prendre un verre"
-          }
+          },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Tu t'en fiches et tu prends bien soin de ne prévenir personne"
           }
       ]
@@ -66,19 +66,19 @@ var quizQuestions = [
       question: "En pleine course sur ton SpeedRacer, un enfant déboule devant Tatooine :",
       answers: [
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Tu l'évites avec tes réflexes de Jedi"
           },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Tu utilises la force pour l'envoyer sur le bas côté"
           },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Tu tends le bras pour l'embarquer à bord"
-          }
+          },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Tu l'écrases !"
           }
       ]
@@ -87,19 +87,19 @@ var quizQuestions = [
       question: "Un ami te doit de l'argent depuis plusieurs cycles lunaires :",
       answers: [
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Tu utilises la force pour le persuader de te rembourser vite"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Tu as tellement d'argent que tu achètes un autre ami"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Tu prends ses enfants en otage"
-          }
+          },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Tu vas prendre des cours de méditation auprès de ton Maître Obi-Wan KeBenoît"
           }
       ]
@@ -108,19 +108,19 @@ var quizQuestions = [
       question: "C'est trois Hommes des sables, ils vont à la mine, le premier prend une pelle, le deuxième prend une pioche et toi, le dernier prend...",
       answers: [
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "La bière"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Son temps"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Le mauvais chemin"
-          }
+          },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "La tête"
           }
       ]
@@ -129,19 +129,19 @@ var quizQuestions = [
       question: "Tu souhaites te reconvertir dans la programmation informatique pour améliorer la sécurité du site web de l'Empire :",
       answers: [
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "La Force est grande en Javascript"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: " Le Côté Obscur du Java t'appelle"
           },
           {
-              type: "DarkSide",
+              type: "Obscur",
               content: "Ton passé de commerçant t'enjoint à faire du PHP"
-          }
+          },
           {
-              type: "LightSide",
+              type: "Lumineux",
               content: "Coder, c'est pour les Hutts"
           }
       ]
