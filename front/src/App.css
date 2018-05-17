@@ -2,14 +2,9 @@
   text-align: center;
 }
 
-<<<<<<< HEAD
-.App-logo {
-  height: 80px;
-=======
 .App-wallpaper {
   animation: App-wallpaper-spin infinite 60s linear;
   height: 100%;
->>>>>>> 8c7ae64d27c364a7ba06203f090e148f9fa8f35e
 }
 
 .App-header {
@@ -32,11 +27,7 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-<<<<<<< HEAD
-*/
-=======
 
 header, body{
   background-image: url("bg.jpg");
 }
->>>>>>> 25f0bd0c45075f23d06f359e71708ff867c112d6
