@@ -9,10 +9,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <h1 className="App-title">SoulMate</h1>
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">by SoulMateWars</h1>
+            <p>L'amour à 3 parsecs de chez toi</p>
         </header>
         <Profil />
+        <p className="App-intro">  </p>
       </div>
     );
   }

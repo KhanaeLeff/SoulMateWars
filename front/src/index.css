@@ -1,5 +1,10 @@
+@font-face {
+  font-family:'lovepolice';
+  src: url('./lovers-quarrel/LoversQuarrel-Regular.otf')
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image:  url("bg.jpg");
 }
