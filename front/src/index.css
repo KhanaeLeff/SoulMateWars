@@ -2,9 +2,42 @@
   font-family:'lovepolice';
   src: url('./lovers-quarrel/LoversQuarrel-Regular.otf')
 }
+@font-face {
+  font-family: 'starwarsPolice';
+  src: url('./starWars/STARWARS.ttf')
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image:  url("bg.jpg");
+  background-image:  url("bg.png");
+}
+
+
+p {
+  color: white;
+}
+input.form-control {
+  border-color: yellow;
+}
+input.placeholder.form-control {
+  color: yellow;
+}
+
+select.form-control {
+  border-color: yellow;
+}
+
+.placeholder.form-control {
+  color: yellow;
+}
+
+label {
+  color: white;
+}
+
+.story {
+  font-size: 1.5em;
+  font-family: 'starwarsPolice';
+  
 }
