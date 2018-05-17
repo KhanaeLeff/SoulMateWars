@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-wallpaper {
+.App-logo {
   animation: App-wallpaper-spin infinite 60s linear;
   height: 100%;
 }
@@ -22,8 +22,7 @@
   font-size: large;
 }
 
-/*Rotation wallpaper.*/
-/*@keyframes App-wallpaper-spin {
+@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
