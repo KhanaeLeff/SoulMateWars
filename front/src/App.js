@@ -19,7 +19,7 @@ class App extends Component {
           </div>
         </div>
         <Profil />
-
+        <Survey />
         <p className="App-intro">  </p>
       </div>
     );
