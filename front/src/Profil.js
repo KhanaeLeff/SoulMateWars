@@ -31,6 +31,15 @@ class Profil extends React.Component {
     const inputStyle = {
       color: "#FF33F6",
     }
+
+    //extraire les valeurs du state (déconstruction)
+    const {nom, age, sexe, interet} = this.state
+    const done = nom !== "" && age !== "" && sexe !== "" && interet !== ""
+    const storyStyle = {
+      display: done ? "block" : "none"
+    }
+
+
     return(
       <div className="row">
         <div className="formulaire col-md-6">
@@ -42,8 +51,8 @@ class Profil extends React.Component {
           <br />
           <input style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe" />
           <br />
-          <label for="">Je suis intéressé(e) par...</label>
-            <select className="form-control" id="exampleFormControlSelect1" style={inputStyle} value={this.state.value} onChange={this.updateProfilInteret}>
+          <label htmlFor="selectGender">Je suis intéressé(e) par...</label>
+            <select className="form-control" id="selectGender" style={inputStyle} value={this.state.value} onChange={this.updateProfilInteret}>
               <option>une femme</option>
               <option>un homme</option>
               <option>un droïde</option>
@@ -51,9 +60,11 @@ class Profil extends React.Component {
         </div>
         <div className="story col-md-6">
           <h1>Bonjour {this.state.prenom}</h1>
-          <p>Puissante la famille {this.state.nom} est, dans la force !</p>
-          <p>Mais seul, aujourd'hui tu te trouves...</p>
-          <p>Tu nous fait part de ton intérêt pour {this.state.interet}</p>
+          <div style={storyStyle}>
+            <p>Puissante la famille {this.state.nom} est, dans la force !</p>
+            <p>Mais seul, aujourd'hui tu te trouves...</p>
+            <p>Tu nous fait part de ton intérêt pour {this.state.interet}</p>
+          </div>
         </div>
       </div>
 
