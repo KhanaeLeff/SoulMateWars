@@ -3,6 +3,7 @@ import Profil from './Profil';
 import Header from './Header';
 import './App.css';
 import NiceStories from './NiceStories'
+import Events from './Events'
 // import Testimony from './Testimony'
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         </div>
         <Profil />
         <NiceStories />
+        <Events />
       </div>
     );
   }

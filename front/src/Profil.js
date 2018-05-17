@@ -47,35 +47,37 @@ class Profil extends React.Component {
       display: done ? "block" : "none"
     }
     return(
-      <div className="row">
-        <div className="formulaire col-md-6">
-          <input style={inputStyle} type="prenom" className="form-control" value={this.state.value} onChange={this.updateProfilPrenom} placeholder="Votre prénom"/>
-          <br />
-          <input style={inputStyle} type="nom" className="form-control" value={this.state.value} onChange={this.updateProfilNom} placeholder="Votre nom"/>
-          <br />
-          <input style={inputStyle} type="age" className="form-control" value={this.state.value} onChange={this.updateProfilAge} placeholder="Votre âge" />
-          <br />
-          <select style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe">
-              <option style={optionStyle}>Homme</option>
-              <option style={optionStyle}>Femme</option>
-              <option style={optionStyle}>Droïde</option>
-          </select>
-          <br />
-          <label htmlFor="selectGender">Je suis intéressé(e) par...</label>
-            <select className="form-control" id="selectGender" style={inputStyle} value={this.state.value} onChange={this.updateProfilInteret}>
-              <option style={optionStyle}>une femme</option>
-              <option style={optionStyle}>un homme</option>
-              <option style={optionStyle}>un droïde</option>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="formulaire col-md-6">
+            <input style={inputStyle} type="prenom" className="form-control" value={this.state.value} onChange={this.updateProfilPrenom} placeholder="Votre prénom"/>
+            <br />
+            <input style={inputStyle} type="nom" className="form-control" value={this.state.value} onChange={this.updateProfilNom} placeholder="Votre nom"/>
+            <br />
+            <input style={inputStyle} type="age" className="form-control" value={this.state.value} onChange={this.updateProfilAge} placeholder="Votre âge" />
+            <br />
+            <select style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe">
+                <option style={optionStyle}>Homme</option>
+                <option style={optionStyle}>Femme</option>
+                <option style={optionStyle}>Droïde</option>
             </select>
-        </div>
-        <div className="story col-md-6">
-          <h1>Bonjour {this.state.prenom}</h1>
-          <div style={storyStyle}>
-            <p>Puissante la famille {this.state.nom} est, dans la force !</p>
-            <p>Mais seul(e), aujourd'hui tu te trouves...</p>
-            <p>Tu nous fait part de ton intérêt pour {this.state.interet}</p>
-            <p>Afin de t'aider</p>
-            <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
+            <br />
+            <label htmlFor="selectGender">Je suis intéressé(e) par...</label>
+              <select className="form-control" id="selectGender" style={inputStyle} value={this.state.value} onChange={this.updateProfilInteret}>
+                <option style={optionStyle}>une femme</option>
+                <option style={optionStyle}>un homme</option>
+                <option style={optionStyle}>un droïde</option>
+              </select>
+          </div>
+          <div className="story col-md-6">
+            <h1>Bonjour {this.state.prenom}</h1>
+            <div style={storyStyle}>
+              <p>Puissante la famille {this.state.nom}, dans la force est!</p>
+              <p>Mais seul(e), aujourd'hui tu te trouves...</p>
+              <p>Tu nous as fait part de ton intérêt pour {this.state.interet}</p>
+              <p>Afin de t'aider</p>
+              <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
+            </div>
           </div>
         </div>
       </div>
