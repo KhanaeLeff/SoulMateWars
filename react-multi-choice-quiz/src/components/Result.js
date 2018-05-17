@@ -14,7 +14,7 @@ function Result(props) {
       transitionAppearTimeout={500}
     >
       <div>
-         PRENOM , un(e) partenaire du Côté <strong>{props.quizResult}</strong> t'attends peut-être !
+         PRENOM, un(e) partenaire du Côté <strong>{props.quizResult}</strong> t'attend peut-être !
       </div>
     </ReactCSSTransitionGroup>
   );
