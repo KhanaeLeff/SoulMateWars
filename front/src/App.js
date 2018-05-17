@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg';
 import './bootstrap.min.css';
+import Testimony from './Testimony'
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
           <p>L'amour à 3 parsecs de chez toi</p>
         </header>
         <p className="App-intro">  </p>
-
+        <Testimony />
       </div>
     );
   }
