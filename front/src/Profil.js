@@ -56,9 +56,9 @@ class Profil extends React.Component {
           <input style={inputStyle} type="age" className="form-control" value={this.state.value} onChange={this.updateProfilAge} placeholder="Votre âge" />
           <br />
           <select style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe">
-              <option style={optionStyle}>Homme</option>
-              <option style={optionStyle}>Femme</option>
               <option style={optionStyle}>Droïde</option>
+              <option style={optionStyle}>Femme</option>
+              <option style={optionStyle}>Homme</option>
           </select>
           <br />
           <label htmlFor="selectGender">Je suis intéressé(e) par...</label>
