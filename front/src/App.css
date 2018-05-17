@@ -1,5 +1,6 @@
+
 .App {
-   background-image: url("bg.png");
+  background-image: url("bg.png");
   text-align: center;
 }
 
@@ -30,3 +31,102 @@ header p {
 h1 {
   color: white;
 }
+
+/*Story Paragraph on Accueil*/
+.storyLink {
+  background-size: cover;
+  width: 100%;
+	height: 445px;
+	margin-top: 100px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'starwarsPolice';
+}
+
+.motherFuckinParagraph {
+  font-family: 'starwarsPolice';
+  color: white;
+  opacity: 1;
+  bottom: 1px;
+}
+
+.btn {
+  color:yellow;
+  background-color: black;
+  border-color: yellow;
+}
+
+/*Story Paragraph on Accueil - End*/
+
+/*Page Testimony - start*/
+
+.testimonies {
+  position: absolute;
+  top: 390px;
+}
+.post {
+	height:455px;
+	min-width: 285px;
+	background-size: cover;
+	background-position: center;
+	padding: 5px;
+	margin: 5px;
+	margin-bottom: 40px;
+}
+
+.texte
+{
+	background-color: rgba(255,255,255,0.8);
+	width: 100%;
+	height: 445px;
+	padding: 20px;
+	text-align: justify;
+	border-radius: 10px;
+}
+
+p
+{
+	font-family: "existencelight";
+}
+
+.p1
+{
+	background-image: url(http://www.premiere.fr/sites/default/files/styles/premiere_article/public/thumbnails/image/star_wars_les_derniers_jedi.jpg);
+}
+
+.p1 > img
+{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  max-height: 405px;
+}
+
+.p2
+{
+	background-image: url(https://media.contentapi.ea.com/content/legacy/starwars-ea-com/fr_FR/starwars/battlefront/news-articles/the-star-wars-battlefront-planets--creating-endor/_jcr_content/body/image_2/renditions/rendition1.img.jpg);
+}
+
+.p2 > img
+{
+  position: absolute;
+  top: 530px;
+  left: 50px;
+  max-height: 405px;
+  width: 300px;
+}
+
+.p3
+{
+	background-image: url(https://media.contentapi.ea.com/content/legacy/starwars-ea-com/fr_FR/starwars/battlefront/news-articles/the-star-wars-battlefront-planets--creating-tatooine/_jcr_content/featuredImage/renditions/rendition1.img.jpg);
+}
+
+.p3 > img
+{
+  position: absolute;
+  top: 1030px;
+  right: 50px;
+  max-height: 405px;
+  width: 300px;
+}
+/*Page Testimony - end*/
