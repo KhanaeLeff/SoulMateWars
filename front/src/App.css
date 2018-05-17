@@ -1,5 +1,6 @@
 .App {
-   background-image: url("bg.jpg");
+  background-image: url("bg.jpg");
+  background-size: no-repeat fixed;
   text-align: center;
 }
 
@@ -9,8 +10,7 @@
 
 .App-header {
   background-color: rgba(255,255,255,0);
-  height: 150px;
-  padding: 20px;
+  height: 100px;
   color: white;
 }
 
