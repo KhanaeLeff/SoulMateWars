@@ -57,9 +57,9 @@ class Profil extends React.Component {
             <input style={inputStyle} type="age" className="form-control" value={this.state.value} onChange={this.updateProfilAge} placeholder="Votre âge" />
             <br />
             <select style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe">
-                <option style={optionStyle}>Homme</option>
-                <option style={optionStyle}>Femme</option>
                 <option style={optionStyle}>Droïde</option>
+                <option style={optionStyle}>Femme</option>
+                <option style={optionStyle}>Homme</option>
             </select>
             <br />
             <label htmlFor="selectGender">Je suis intéressé(e) par...</label>
@@ -72,10 +72,10 @@ class Profil extends React.Component {
           <div className="story col-md-6">
             <h1>Bonjour {this.state.prenom}</h1>
             <div style={storyStyle}>
-              <p>Puissante la famille {this.state.nom}, dans la force est!</p>
-              <p>Mais seul(e), aujourd'hui tu te trouves...</p>
-              <p>Tu nous as fait part de ton intérêt pour {this.state.interet}</p>
-              <p>Afin de t'aider</p>
+              <p className="motherFuckinParagraph">Puissante la famille {this.state.nom}, dans la force est!<br/>
+              Mais seul(e), aujourd'hui tu te trouves...<br/>
+              Tu nous as fait part de ton intérêt pour {this.state.interet}<br/>
+              Afin de t'aider</p>
               <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
             </div>
           </div>
