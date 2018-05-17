@@ -5,6 +5,7 @@ import Quiz from './components/Quiz';
 import Result from './components/Result';
 import Profil from './Profil'
 import Header from './Header'
+import Survey from './Survey'
 
 import './App.css';
 
