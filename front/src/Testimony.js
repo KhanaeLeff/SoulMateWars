@@ -45,7 +45,7 @@ class Testimony extends React.Component {
                 <img src="https://vignette.wikia.nocookie.net/fr.starwars/images/4/4a/Kylo_Ren_TLJ.png/revision/latest?cb=20171224083913" className="img-fluid offset-8" alt="Responsive" />
             </div>
             <div className="scrollUp">
-                <a href="#top"><img src="https://zupimages.net/up/18/10/j3ay.png" /></a>
+                <a href="#top"><img src="https://zupimages.net/up/18/10/j3ay.png" alt="" /></a>
             </div>
         </div>
     )
