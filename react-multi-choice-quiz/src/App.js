@@ -17,6 +17,7 @@ class App extends Component {
       question: '',
       answerOptions: [],
       answer: '',
+      answerId: '',
       answersCount: {
         Obscur: 0,
         Lumineux: 0
@@ -55,7 +56,8 @@ class App extends Component {
   };
 
   handleAnswerSelected(event) {
-    this.setUserAnswer(event.currentTarget.value);
+    const radioButton = event.currentTarget
+    this.setUserAnswer(radioButton.value, radioButton.id);
 
     if (this.state.questionId < quizQuestions.length) {
         setTimeout(() => this.setNextQuestion(), 300);
@@ -64,14 +66,15 @@ class App extends Component {
     }
   }
 
-  setUserAnswer(answer) {
+  setUserAnswer(answer, answerId) {
     const updatedAnswersCount = update(this.state.answersCount, {
       [answer]: {$apply: (currentValue) => currentValue + 1}
     });
 
     this.setState({
         answersCount: updatedAnswersCount,
-        answer: answer
+        answer: answer,
+        answerId: answerId
     });
   }
 
@@ -109,6 +112,7 @@ class App extends Component {
     return (
       <Quiz
         answer={this.state.answer}
+        answerId={this.state.answerId}
         answerOptions={this.state.answerOptions}
         questionId={this.state.questionId}
         question={this.state.question}
