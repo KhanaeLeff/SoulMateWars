@@ -147,3 +147,91 @@ p
   width: 300px;
 }
 /*Page Testimony - end*/
+
+/*Footer - start*/
+.paddingLeft
+{
+	text-align: center;
+	font-family: "existencelight";
+	color: white;
+	font-size: 1em;
+	min-height: 250px;
+	background-color: rgb(37, 37, 37);
+	padding-top: 70px;
+}
+
+.paddingLeft row
+{
+	margin-right: 0;
+}
+
+.no-gutters
+{
+	margin-right: 0;
+	margin-left: 0;
+	> .col,> [class*="col-"]
+	{
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+footer ul
+{
+	list-style-type:none;
+}
+
+footer .mentions li
+{
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+footer .reseaux p
+{
+	text-align: center;
+}
+
+footer .reseaux li
+{
+	display: inline;
+}
+
+footer .reseaux p
+{
+	text-align: center;
+}
+
+footer .imgbtn
+{
+	width:40px;
+	filter: grayscale(1);
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+footer .imgbtn:hover
+{
+	filter: grayscale(0);
+}
+
+footer a:link
+{
+	text-decoration:none;
+	color:white;
+}
+
+footer a:visited
+{
+	text-decoration:none;
+	color:white;
+}
+
+.madeBy
+{
+	color: white;
+	font-style: italic;
+	margin-top: 50px;
+	text-align: center;
+}
+/* Footer - end*/

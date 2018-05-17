@@ -4,6 +4,7 @@ import Header from './Header';
 import './App.css';
 import NiceStories from './NiceStories'
 import Events from './Events'
+import Footer from './Footer'
 // import Testimony from './Testimony'
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         <Profil />
         <NiceStories />
         <Events />
+        <Footer />
       </div>
     );
   }
