@@ -32,22 +32,23 @@ class Profil extends React.Component {
       color: "yellow",
       backgroundColor: "rgba(255,255,255,0)",
     }
-
+    const buttonStyle = {
+      color: "yellow",
+      backgroundColor: "black",
+      borderColor: "yellow",
+    }
     const optionStyle = {
       backgroundColor: "black"
     }
-
     //extraire les valeurs du state (déconstruction)
     const {nom, age, sexe, interet} = this.state
     const done = nom !== "" && age !== "" && sexe !== "" && interet !== ""
     const storyStyle = {
       display: done ? "block" : "none"
     }
-
-
     return(
       <div className="row">
-        <div className="formulaire col-md-5">
+        <div className="formulaire col-md-6">
           <input style={inputStyle} type="prenom" className="form-control" value={this.state.value} onChange={this.updateProfilPrenom} placeholder="Votre prénom"/>
           <br />
           <input style={inputStyle} type="nom" className="form-control" value={this.state.value} onChange={this.updateProfilNom} placeholder="Votre nom"/>
@@ -73,9 +74,9 @@ class Profil extends React.Component {
             <p>Puissante la famille {this.state.nom} est, dans la force !</p>
             <p>Mais seul(e), aujourd'hui tu te trouves...</p>
             <p>Tu nous fait part de ton intérêt pour {this.state.interet}</p>
-            <button>Des renseignements, nous donner tu dois</button>
+            <p>Afin de t'aider</p>
+            <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
           </div>
-
         </div>
       </div>
     )
