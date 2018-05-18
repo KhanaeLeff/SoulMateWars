@@ -4,11 +4,12 @@ class Profil extends React.Component {
   constructor(props) {
     super(props)
     this.updateProfilPrenom = this.updateProfilPrenom.bind(this)
-    this.state = {prenom: "coeur à prendre", nom:"", age:"", sexe:"", interet:""}
+    this.state = {prenom: "coeur à prendre", nom:"", age:"", sexe:"", interet:"", species:""}
     this.updateProfilNom = this.updateProfilNom.bind(this)
     this.updateProfilAge = this.updateProfilAge.bind(this)
     this.updateProfilSexe = this.updateProfilSexe.bind(this)
     this.updateProfilInteret = this.updateProfilInteret.bind(this)
+    this.updateProfilSpecies = this.updateProfilSpecies.bind(this)
   }
 
   updateProfilPrenom(event) {
@@ -26,6 +27,9 @@ class Profil extends React.Component {
   updateProfilInteret(event) {
     this.setState({interet: event.target.value})
   }
+  updateProfilSpecies(event) {
+    this.setState({species: event.target.value})
+  }
 
   render() {
     const inputStyle = {
@@ -41,8 +45,8 @@ class Profil extends React.Component {
       backgroundColor: "black"
     }
     //extraire les valeurs du state (déconstruction)
-    const {nom, age, sexe, interet} = this.state
-    const done = nom !== "" && age !== "" && sexe !== "" && interet !== ""
+    const {nom, age, sexe, interet, species} = this.state
+    const done = nom !== "" && age !== "" && sexe !== "" && interet !== "" && species !== ""
     const storyStyle = {
       display: done ? "block" : "none"
     }
@@ -57,16 +61,24 @@ class Profil extends React.Component {
             <input style={inputStyle} type="age" className="form-control" value={this.state.value} onChange={this.updateProfilAge} placeholder="Votre âge" />
             <br />
             <select style={inputStyle} type="sexe" className="form-control" value={this.state.value} onChange={this.updateProfilSexe} placeholder="Votre sexe">
-                <option style={optionStyle}>Droïde</option>
-                <option style={optionStyle}>Femme</option>
-                <option style={optionStyle}>Homme</option>
+              <option style={optionStyle}></option>
+              <option style={optionStyle}>Droïde</option>
+              <option style={optionStyle}>Femme</option>
+              <option style={optionStyle}>Homme</option>
+              <option style={optionStyle}>Wookie</option>
             </select>
             <br />
             <label htmlFor="selectGender">Je suis intéressé(e) par...</label>
               <select className="form-control" id="selectGender" style={inputStyle} value={this.state.value} onChange={this.updateProfilInteret}>
-                <option style={optionStyle}>une femme</option>
-                <option style={optionStyle}>un homme</option>
-                <option style={optionStyle}>un droïde</option>
+                <option style={optionStyle} value=""></option>
+                <option style={optionStyle} value="de sexe féminin">Une femme</option>
+                <option style={optionStyle} value="de sexe masculin">Un homme</option>
+              </select>
+              <br />
+              <select className="form-control" id="selectSpecies" style={inputStyle} value={this.state.value} onChange={this.updateProfilSpecies}>
+                <option style={optionStyle} value=""></option>
+                <option style={optionStyle} value="un humain">Un être humain</option>
+                <option style={optionStyle} value="une créature exotique">Une créature plus exotique</option>
               </select>
           </div>
           <div className="story col-md-6">
@@ -74,7 +86,8 @@ class Profil extends React.Component {
             <div style={storyStyle}>
               <p className="motherFuckinParagraph">Puissante la famille {this.state.nom}, dans la force est!<br/>
               Mais seul(e), aujourd'hui tu te trouves...<br/>
-              Tu nous as fait part de ton intérêt pour {this.state.interet}<br/>
+              De ton intérêt pour {this.state.species}<br/>
+              {this.state.interet} tu nous as fait part<br /> 
               Afin de t'aider</p>
               <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
             </div>
