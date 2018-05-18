@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import App2 from './quiz/src/App'
 import Profil from './Profil';
 import Header from './Header';
 import './App.css';
@@ -17,6 +18,7 @@ class App extends Component {
           </div>
         </div>
         <Profil />
+        <App2 />
         <NiceStories />
         <Events />
         <Footer />

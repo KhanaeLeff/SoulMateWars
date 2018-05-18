@@ -15,11 +15,10 @@ body {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  background: #fff;
   border-radius: 3px;
 }
-.container label {
-  color: #212529;
+.container h2 {
+  color: white;
 }
 
 @media (min-width: 769px) {
@@ -42,6 +41,7 @@ body {
 
 /* QuestionCount Component */
 .questionCount {
+  color: white;
   padding: 1.5rem 2.5rem 0;
   font-size: 14px;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .answerOption:hover {
-  background-color: #eefbfe;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .radioCustomButton {
