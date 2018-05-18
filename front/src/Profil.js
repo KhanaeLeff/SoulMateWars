@@ -9,7 +9,9 @@ class Profil extends React.Component {
     this.updateProfilAge = this.updateProfilAge.bind(this)
     this.updateProfilSexe = this.updateProfilSexe.bind(this)
     this.updateProfilInteret = this.updateProfilInteret.bind(this)
+    this.onClickButton = this.onClickButton.bind(this)
     this.updateProfilSpecies = this.updateProfilSpecies.bind(this)
+
   }
 
   updateProfilPrenom(event) {
@@ -27,7 +29,10 @@ class Profil extends React.Component {
   updateProfilInteret(event) {
     this.setState({interet: event.target.value})
   }
-  updateProfilSpecies(event) {
+  onClickButton(event) {
+    this.props.onProfileDone(this.state)
+  }
+    updateProfilSpecies(event) {
     this.setState({species: event.target.value})
   }
 
@@ -87,9 +92,9 @@ class Profil extends React.Component {
               <p className="motherFuckinParagraph">Puissante la famille {this.state.nom}, dans la force est!<br/>
               Mais seul(e), aujourd'hui tu te trouves...<br/>
               De ton intérêt pour {this.state.species}<br/>
-              {this.state.interet} tu nous as fait part<br /> 
+              {this.state.interet} tu nous as fait part<br />
               Afin de t'aider</p>
-              <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
+              <button style={buttonStyle} onClick={this.onClickButton} >Plus de renseignements, nous donner tu dois</button>
             </div>
           </div>
         </div>
