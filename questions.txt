@@ -11,15 +11,15 @@
   d) La Transe-expérimentale-progressive des Ewoks
 
 3) Tu es à bord d'un vaisseau de croisière de la Fédération, quand tu vois un départ de feu dans un couloir:
-  a) Tu hurles à l'aide?
+  a) Tu fais griller des saucisses
   b) Tu vas voir l'équipe de maintenance pour leur filer un coup de main
   c) Tu retournes au bar prendre un verre
-  d) Tu t'en fiches et prends bien soin de ne prévenir personne
+  d) Tu rajoute un peu d'essence...pour voir...
 
-4) En pleine course sur ton speedracer, un enfant déboule devant Tatooine
+4) En pleine course sur ton speedracer, un enfant déboule devant toi
   a) Tu l'évites avec tes réflexes de Jedi
   b) Tu utilises la force pour l'envoyer sur le bas côté
-  c) Tu tends le bras pour l'embarquer à bord
+  c) Tu accélères
   d) Tu l'écrases
 
 5) Un ami te doit de l'argent depuis plusieurs cycles lunaires
@@ -30,12 +30,6 @@
 
 6) Tu souhaites te reconvertir dans la programmation informatique pour améliorer la sécurité du site web de l'Empire
   a) La Force est grande en Javascript
-  b) Le côté obscur du Java t'appelle
+  b) Le Java c'est caca!
   c) Ton passé de commerçant t'enjoint à faire du PHP
   d) Coder, c'est pour les Hutts
-
-7) C'est trois Hommes des sables, ils vont à la mine, le premier prend une pelle, le deuxième prend une pioche et toi, le dernier prend...
-  a) La bière
-  b) Son temps
-  c) Le mauvais chemin
-  d) La tête

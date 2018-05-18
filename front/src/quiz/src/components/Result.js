@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 function Result(props) {
@@ -22,7 +23,7 @@ function Result(props) {
 }
 
 Result.propTypes = {
-  quizResult: React.PropTypes.string.isRequired,
+  quizResult: PropTypes.string.isRequired,
 };
 
 export default Result;
