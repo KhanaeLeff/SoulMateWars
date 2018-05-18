@@ -9,6 +9,7 @@ class Profil extends React.Component {
     this.updateProfilAge = this.updateProfilAge.bind(this)
     this.updateProfilSexe = this.updateProfilSexe.bind(this)
     this.updateProfilInteret = this.updateProfilInteret.bind(this)
+    this.onClickButton = this.onClickButton.bind(this)
   }
 
   updateProfilPrenom(event) {
@@ -25,6 +26,9 @@ class Profil extends React.Component {
   }
   updateProfilInteret(event) {
     this.setState({interet: event.target.value})
+  }
+  onClickButton(event) {
+    this.props.onProfileDone(this.state)
   }
 
   render() {
@@ -76,7 +80,7 @@ class Profil extends React.Component {
               Mais seul(e), aujourd'hui tu te trouves...<br/>
               Tu nous as fait part de ton intérêt pour {this.state.interet}<br/>
               Afin de t'aider</p>
-              <button style={buttonStyle}>Plus de renseignements, nous donner tu dois</button>
+              <button style={buttonStyle} onClick={this.onClickButton} >Plus de renseignements, nous donner tu dois</button>
             </div>
           </div>
         </div>

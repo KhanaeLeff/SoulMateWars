@@ -103,6 +103,7 @@ class App2 extends Component {
   setResults(result) {
     if (result.length === 1) {
       this.setState({ result: result[0] });
+      this.props.onQuizDone(result[0])
     } else {
       this.setState({ result: 'Undetermined' });
     }
