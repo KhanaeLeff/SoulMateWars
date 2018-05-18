@@ -21,27 +21,6 @@ var quizQuestions = [
       ]
   },
   {
-      question: "Quel est ton type de musique préféré ?",
-      answers: [
-          {
-              type: "Obscur",
-              content: "Le Hard-Force"
-          },
-          {
-              type: "Lumineux",
-              content: "La Musette de Yavin IV"
-          },
-          {
-              type: "Obscur",
-              content: "Le Rap des Siths"
-          },
-          {
-              type: "Lumineux",
-              content: "La Transe-expérimentale-progressive des Ewoks"
-          }
-      ]
-  },
-  {
       question: "Tu es à bord d'un vaisseau de croisière de la Fédération, quand tu vois un départ de feu dans un couloir :",
       answers: [
           {
@@ -54,11 +33,11 @@ var quizQuestions = [
           },
           {
               type: "Obscur",
-              content: "Tu retournes au bar prendre un verre"
+              content: "Tu rajoutes de l'essence... juste pour voir..."
           },
           {
               type: "Obscur",
-              content: "Tu t'en fiches et tu prends bien soin de ne prévenir personne"
+              content: "Tu sors les saucisses pour faire un barbecue"
           }
       ]
   },
@@ -70,12 +49,12 @@ var quizQuestions = [
               content: "Tu l'évites avec tes réflexes de Jedi"
           },
           {
-              type: "Obscur",
+              type: "Lumineux",
               content: "Tu utilises la force pour l'envoyer sur le bas côté"
           },
           {
-              type: "Lumineux",
-              content: "Tu tends le bras pour l'embarquer à bord"
+              type: "Obscur",
+              content: "Tu accélères !"
           },
           {
               type: "Obscur",
@@ -105,28 +84,7 @@ var quizQuestions = [
       ]
   },
   {
-      question: "C'est trois Hommes des sables, ils vont à la mine, le premier prend une pelle, le deuxième prend une pioche et toi, le dernier prend...",
-      answers: [
-          {
-              type: "Lumineux",
-              content: "La bière"
-          },
-          {
-              type: "Obscur",
-              content: "Son temps"
-          },
-          {
-              type: "Obscur",
-              content: "Le mauvais chemin"
-          },
-          {
-              type: "Lumineux",
-              content: "La tête"
-          }
-      ]
-  },
-  {
-      question: "Tu souhaites te reconvertir dans la programmation informatique pour améliorer la sécurité du site web de l'Empire :",
+      question: "Tu souhaites te reconvertir dans la programmation pour améliorer la sécurité informatique du site web de l'Empire :",
       answers: [
           {
               type: "Lumineux",
