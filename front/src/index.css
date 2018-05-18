@@ -18,18 +18,24 @@ p {
   color: white;
 }
 input.form-control {
-  border-color: yellow;
+  border-color: #ffd700;
 }
-input.placeholder.form-control {
-  color: yellow;
+/* input.placeholder.form-control {
+  color: #ffd700;
 }
+input.placeholder{
+  color: #ffd700;
+} */
 
+.formulaire{
+  color: #ffd700;
+}
 select.form-control {
-  border-color: yellow;
+  border-color: #ffd700;
 }
 
 .placeholder.form-control {
-  color: yellow;
+  color: #ffd700;
 }
 
 label {
