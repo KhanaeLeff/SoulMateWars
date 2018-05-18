@@ -6,6 +6,7 @@ import './App.css';
 import NiceStories from './NiceStories'
 import Events from './Events'
 import Footer from './Footer'
+import Proposals from './Proposals'
 // import Testimony from './Testimony'
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
         <NiceStories />
         <Events />
         <Footer />
+        <Proposals />
       </div>
     );
   }
