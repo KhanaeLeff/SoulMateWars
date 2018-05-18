@@ -3,10 +3,10 @@ import update from 'react-addons-update';
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
-import logo from './svg/logo.svg';
-import './App.css';
+import './index.css';
 
-class App extends Component {
+
+class App2 extends Component {
 
   constructor(props) {
     super(props);
@@ -130,11 +130,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>React Quiz</h2>
-        </div>
+      <div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
@@ -142,4 +138,4 @@ class App extends Component {
 
 }
 
-export default App;
+export default App2;

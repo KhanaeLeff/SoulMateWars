@@ -3,13 +3,13 @@
 * {
   box-sizing: border-box;
 }
-
+/*
 body {
   margin: 0;
   padding: 0;
   background: #eee;
   font-family: sans-serif;
-}
+} */
 
 .container {
   position: relative;
@@ -17,6 +17,9 @@ body {
   margin: 0 auto;
   background: #fff;
   border-radius: 3px;
+}
+.container label {
+  color: #212529;
 }
 
 @media (min-width: 769px) {
