@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     return(
-    //   <div class="paddingLeft">
-		// 	<div class="row no-gutters">
-		// 		<p class="motherFuckinParagraph">Les créateurs
+    //   <div className="paddingLeft">
+		// 	<div className="row no-gutters">
+		// 		<p className="motherFuckinParagraph">Les créateurs
     //       <a href="https://www.linkedin.com/in/nicolas-nivlet-b3aab6a3/">Nicolas Nivlet</a>
     //       <a href="https://www.linkedin.com/in/alexandre-morazin/">Alexandre Marazin</a>
     //       <a href="https://www.linkedin.com/in/thientamtran/">Thien Tam Tran</a>
@@ -14,7 +14,7 @@ class Footer extends Component {
 		// </div>
     <footer>
           <hr width= "100%" color= "yellow" />
-     <div class="made col-md-12">
+     <div className="made col-md-12">
        <p>Made by <a href="https://www.linkedin.com/in/nicolas-nivlet-b3aab6a3/" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="LinkedIn de Nicolas !"><span>Nicolas</span></a>,
         <a href="https://www.linkedin.com/in/alexandre-morazin/" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="LinkedIn d'Alexandre' !"> <span>Alexandre</span></a>,
         <a href="https://www.linkedin.com/in/thientamtran/" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="LinkedIn de Thien Tam !"> <span>Thien Tam</span></a>,
