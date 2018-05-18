@@ -150,8 +150,25 @@ p
   max-height: 405px;
   width: 300px;
 }
+
+footer
+{
+  margin-top: 50px;
+
+}
+
+footer span
+{
+  color: white;
+  text-decoration: underline;
+}
+
+footer p
+{
+  font-family: 'starwarsPolice';
+}
+
 /*Page Testimony - end*/
 
 /*Footer - start*/
-
 /* Footer - end*/
