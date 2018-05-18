@@ -11,7 +11,6 @@ class Profil extends React.Component {
     this.updateProfilInteret = this.updateProfilInteret.bind(this)
     this.onClickButton = this.onClickButton.bind(this)
     this.updateProfilSpecies = this.updateProfilSpecies.bind(this)
-
   }
 
   updateProfilPrenom(event) {

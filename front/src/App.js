@@ -50,6 +50,9 @@ class App extends Component {
     else if (step === 1) {
       componentToShow = <App2 onQuizDone={this.onQuizDone} />
     }
+    else if (step === 2) {
+      componentToShow = <Proposals />
+    }
     console.log(this.state)
     return (
       <div className="App">
@@ -62,7 +65,6 @@ class App extends Component {
         <NiceStories />
         <Events />
         <Footer />
-        <Proposals />
       </div>
     );
   }

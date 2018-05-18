@@ -1,47 +1,54 @@
 import React from 'react';
+import Character from './Character'
+import Profil from './Profil'
+import './Proposals.css'
+
 
 class Proposals extends React.Component {
   constructor() {
     super();
-      this.state = {
-        characters: {},
-      };
+    this.state = {
+      characters: [],
+    };
   }
 
-componentWillMount() {
+  componentWillMount() {
 
-  fetch("http://localhost:5000/characters")
-  .then(results => {
-    return results.json();
-  }).then(data => {
-    let pis = data.results.map((name) => {
-      return(
-        <div key={name.results}>
-          <img src={pic.picture}
-      )
-    }))
-    this.setState({characters: data});
-    console.log(characters)
-  })
+    fetch("/characters")
+    .then(results => results.json())
+    .then(data => {
+      const femaleData = data.filter(character => character.gender === 'female')
+      const filteredData = femaleData.filter(character => character.species !== 'human')
+      // <Proposals profile={this.state.profile} /> 
+      // <Proposals result={this.state.result} />
+      
+
+      // if(profile.interet === "de sexe masculin") {
+      //   return maleData
+      // }
+      //this.props.profile
+      //this.props.result
+      // let  = data.results.map(() => {
+      //   return(
+
+      //   )
+      // }))
+      this.setState({characters: filteredData});
+    })
+  }
+  render () {
+    return (
+      <div className='container'>
+      {this.state.characters.map(character => <Character character={character} />)}
+      </div>
+    )
+  }
 }
-}
 
-let characters = data.results.map((character => {
-  const pseudoGithub = character.name.replace(/\s/g, '-').toLowerCase()
-  const githubUrl = `https://github.com/${pseudoGithub}`
-  const profile = `https://localhost:5000/characters/${character.id}`
+// let characters = data.results.map((character => {
+//   const pseudoGithub = character.name.replace(/\s/g, '-').toLowerCase()
+//   const githubUrl = `https://github.com/${pseudoGithub}`
+//   const profile = `https://localhost:5000/characters/${character.id}`
 
-//   render() {
-//     return(
-//     <div class="character ${isResistant(character.affiliations)}" style="background-image: url(${character.pic})">
-//       <div class="character-infos">
-//         <a href="${profile}"><div id="theCharacter" class="character-name">${character.name}</div></a>
-//         <div class="character-born">Born: ${(character.born)}</div>
-//         <div class="character-died">Died: ${(character.died)}</div>
-//         <a href="${githubUrl}"><div class="character-github"><img src="../img/logo-github.svg" /> /${pseudoGithub}</div></a>
-//       </div>
-//     </div>
-//   )}
-// }
 
 export default Proposals;
