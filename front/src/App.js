@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import App2 from './quiz/src/App'
-import Profil from './Profil';
-import Header from './Header';
-import './App.css';
+import Profil from './Profil'
+import Header from './Header'
+import './App.css'
 import NiceStories from './NiceStories'
 import Events from './Events'
 import Footer from './Footer'
@@ -10,7 +10,7 @@ import Proposals from './Proposals'
 // import Testimony from './Testimony'
 
 class App extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       profile: {},
@@ -20,20 +20,20 @@ class App extends Component {
     this.onProfileDone = this.onProfileDone.bind(this)
     this.onQuizDone = this.onQuizDone.bind(this)
   }
-  nextStep(){
+  nextStep () {
     const newStep = this.state.step + 1
     this.setState({
       step: newStep
     })
   }
-  onProfileDone(profile){
+  onProfileDone (profile) {
     const newStep = this.state.step + 1
     this.setState({
       profile: profile,
       step: newStep
     })
   }
-  onQuizDone(result){
+  onQuizDone (result) {
     const newStep = this.state.step + 1
     this.setState({
       result: result,
@@ -41,17 +41,15 @@ class App extends Component {
     })
   }
 
-  render() {
+  render () {
     const step = this.state.step
     let componentToShow
     if (step === 0) {
       componentToShow = <Profil onProfileDone={this.onProfileDone} />
-    }
-    else if (step === 1) {
+    } else if (step === 1) {
       componentToShow = <App2 onQuizDone={this.onQuizDone} />
-    }
-    else if (step === 2) {
-      componentToShow = <Proposals />
+    } else if (step === 2) {
+      componentToShow = <Proposals profile={this.state.profile} />
     }
     console.log(this.state)
     return (
@@ -66,8 +64,8 @@ class App extends Component {
         <Events />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Character from './Character'
 import Profil from './Profil'
 import './Proposals.css'
@@ -6,19 +6,21 @@ import './Proposals.css'
 
 class Proposals extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      characters: [],
-    };
+      characters: []
+    }
   }
 
-  componentWillMount() {
+  componentWillMount () {
+    const profile = this.state.profile
+    // const result=this.state.result
 
     fetch("/characters")
     .then(results => results.json())
     .then(data => {
-      const femaleData = data.filter(character => character.gender === 'female')
-      const filteredData = femaleData.filter(character => character.species !== 'human')
+      const firstFilter = data.filter(character => character.gender === "female" )
+      const filteredData = firstFilter.filter(character => character.species !== "human")
       // <Proposals profile={this.state.profile} /> 
       // <Proposals result={this.state.result} />
       
